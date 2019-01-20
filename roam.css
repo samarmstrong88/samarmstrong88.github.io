@@ -32,6 +32,12 @@ header {
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
+.points-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+
+}
 
 
 #header > :first-child {
@@ -86,14 +92,7 @@ nav {
   text-align: left;
 }
 
-.content-main {
-  /* min-height: 100vh; */
-  margin: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
-  grid-column-end: span 2;
-  
-}
+
 
 
 .animate-wrapper {
@@ -145,17 +144,32 @@ header {
 }
 
 
-.grid-wrapper {
+.content-wrapper {
   display: grid;
-  padding-top: 4rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100vh 100vh;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: auto minmax(0, 1fr);
+
 }
 
+.content-main {
+  padding: 6rem 1rem 1rem;;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-bar {
+  margin-top: 80px;
+  background: #f0f0f0;
+  width: 100px;
+}
+
+.skills-bar img {
+  max-width: 100px;
+}
 .bio p {
   text-align: justify;
+  font-size: 1rem;
 }
 
 
@@ -174,7 +188,8 @@ h1 {
 .intro {
   text-align: center;
   font-size: 1.5rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
+
 }
 
 .intro h2 {
@@ -184,6 +199,13 @@ h1 {
 img.profile-pic {
   max-width: 70%;
   border: 2px solid #f0f0f0
+}
+
+.points-divider {
+  flex-grow: 1;
+  border-bottom: 2px solid #f0f0f0;
+  margin: 5px;
+  
 }
 
 @keyframes fadeInSlide{
