@@ -353,6 +353,7 @@ img.profile-pic {
 
   .menu-toggle {
     margin-right: 1.5rem;
+    display: block;
   }
 
   .menu-closed {
